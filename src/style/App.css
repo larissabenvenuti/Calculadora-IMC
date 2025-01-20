@@ -16,14 +16,14 @@ header {
     color: #000000;
     padding: 10px;
     text-align: center;
-    border: 1px solid #000000;
+    border: 1px solid #c1c1c1;
     border-radius: 15px;
     width: 50vw;
 }
 
 form {
     background-color: #ffffff;
-    border: 1px solid #000000;
+    border: 1px solid #c1c1c1;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
@@ -44,10 +44,13 @@ label {
 input {
     width: calc(100% - 30px);
     padding: 10px;
+    border: 1px solid #c1c1c1;
     border-radius: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
     margin-bottom: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
 button {
@@ -75,7 +78,7 @@ button:hover {
     background-color: #ffffff;
     margin-top: 10px;
     padding: 10px;
-    border: 2px solid #000000;
+    border: 1px solid #c1c1c1;
     border-radius: 10px;
     color: #000000;
     font-size: 14px;
