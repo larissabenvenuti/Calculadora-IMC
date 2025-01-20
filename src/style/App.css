@@ -1,64 +1,149 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #ebc0c0;
+    background-color: #6e98d6;
     padding: 20px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     color: #000000;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
-    border: 2px solid #bb5d5d;
-    box-shadow: 1px 3px #5a4399;
+    border: 1px solid #000000;
     border-radius: 15px;
+    width: 50vw;
 }
 
 form {
-    background-color: #e0e0e0;
-    border: 2px solid #bb5d5d;
+    background-color: #ffffff;
+    border: 1px solid #000000;
     border-radius: 10px;
-    padding: 25px;
+    padding: 10px;
     margin-top: 10px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
 label {
-    color:#000000
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 input {
-    width: 95%;
-    padding: 15px;
-    border-radius: 2px;
+    width: calc(100% - 30px);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 button {
-    margin-top: 20px;
-    background-color: #bb5d5d;
-    color: white;
+    max-width: 50%;
+    width: 150px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #505050 ;
+    color: #ffffff;
     padding: 8px;
+    border: none;
     border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #5a4399;
+    background-color: #000000;
 }
 
 .resultado-container {
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     margin-top: 10px;
-    padding: 15px;
-    border: 2px solid #bb5d5d;
+    padding: 10px;
+    border: 2px solid #000000;
     border-radius: 10px;
     color: #000000;
-    font-size: 80%;
+    font-size: 14px;
+    width: 50vw;
+    text-align: center;
 }
 
-footer {
-    padding: 10px;
-    font-size: 80%;
-    text-align: left;
-    color: #000000
+.resultado-container h3 {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    header, form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    button {
+        min-width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header, form {
+        width: 100%;
+        padding: 15px; 
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    input {
+        width: calc(100% - 20px); 
+        padding: 8px;
+        font-size: 14px; 
+    }
+
+    button {
+        width: 100%;
+        padding: 8px; 
+        font-size: 14px; 
+    }
 }

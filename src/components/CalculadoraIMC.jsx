@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../style/App.css";
 import Header from "./Header";
-import Footer from "./Footer";
 
 export default function CalculadoraIMC() {
   const [peso, setPeso] = useState("");
@@ -38,14 +37,14 @@ export default function CalculadoraIMC() {
     <div>
       <Header />
       <form onSubmit={calcularIMC}>
-        <label>Peso: </label>
+        <label>Peso (kg): </label>
         <input
           type="number"
           placeholder="Insira seu peso"
           value={peso}
           onChange={(e) => setPeso(e.target.value)}
         />
-        <label>Altura: </label>
+        <label>Altura (m): </label>
         <input
           type="number"
           placeholder="Insira sua altura"
@@ -63,7 +62,6 @@ export default function CalculadoraIMC() {
           </h3>
         </div>
       )}
-      <Footer />
     </div>
   );
 }
